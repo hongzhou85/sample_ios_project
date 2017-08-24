@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ycm-lW-Duz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="3yW-K4-Qm4">
+            <objects>
+                <viewController id="ycm-lW-Duz" customClass="MapViewController" customModule="Saitama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oge-rM-j7R"/>
+                        <viewControllerLayoutGuide type="bottom" id="z9X-FU-SkN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GLk-Rc-sA9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6lx-6l-Yfj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMu-i3-F8G">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="esJ-iA-Ro8"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem image="historyIcon" id="j7d-zr-EvM">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="checkHistory" destination="ycm-lW-Duz" id="b1p-19-WHB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6lx-6l-Yfj" firstAttribute="centerX" secondItem="GLk-Rc-sA9" secondAttribute="centerX" id="29c-vE-100"/>
+                            <constraint firstItem="6lx-6l-Yfj" firstAttribute="width" secondItem="GLk-Rc-sA9" secondAttribute="width" id="BwC-2d-8Il"/>
+                            <constraint firstItem="yMu-i3-F8G" firstAttribute="width" secondItem="GLk-Rc-sA9" secondAttribute="width" id="CXv-we-PXI"/>
+                            <constraint firstItem="yMu-i3-F8G" firstAttribute="centerX" secondItem="GLk-Rc-sA9" secondAttribute="centerX" id="CqF-RF-X4E"/>
+                            <constraint firstItem="yMu-i3-F8G" firstAttribute="top" secondItem="6lx-6l-Yfj" secondAttribute="bottom" id="S57-Em-4AB"/>
+                            <constraint firstItem="6lx-6l-Yfj" firstAttribute="top" secondItem="oge-rM-j7R" secondAttribute="bottom" id="WpA-7Z-gBU"/>
+                            <constraint firstItem="z9X-FU-SkN" firstAttribute="top" secondItem="yMu-i3-F8G" secondAttribute="bottom" id="ts6-sM-SI8"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="historyButton" destination="j7d-zr-EvM" id="Kq1-Nm-HK2"/>
+                        <outlet property="mapView" destination="6lx-6l-Yfj" id="JdV-NX-LPA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5lh-Dx-3EL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="19.340329835082461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="historyIcon" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryCell" customModule="Saitama" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="SFO-JA-IkX" customClass="HistoryCell" customModule="Saitama" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SFO-JA-IkX" id="76x-Gx-CM0">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="147.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aI-jH-250">
+                        <rect key="frame" x="16" y="8" width="197.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9i-xl-BkI">
+                        <rect key="frame" x="16" y="32" width="363" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-nX-E38">
+                        <rect key="frame" x="16" y="59.5" width="363" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-wb-BXN">
+                        <rect key="frame" x="16" y="87" width="363" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eB-6v-dmd">
+                        <rect key="frame" x="16" y="115" width="363" height="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6eB-6v-dmd" firstAttribute="trailing" secondItem="cMa-wb-BXN" secondAttribute="trailing" id="5bX-gL-3Fj"/>
+                    <constraint firstAttribute="topMargin" secondItem="3aI-jH-250" secondAttribute="top" id="9z6-U7-HaI"/>
+                    <constraint firstItem="3aI-jH-250" firstAttribute="width" secondItem="76x-Gx-CM0" secondAttribute="width" multiplier="1:2" id="AKL-ax-E71"/>
+                    <constraint firstItem="c9i-xl-BkI" firstAttribute="top" secondItem="3aI-jH-250" secondAttribute="bottom" constant="8" id="FC9-BT-Y6z"/>
+                    <constraint firstItem="3aI-jH-250" firstAttribute="leading" secondItem="76x-Gx-CM0" secondAttribute="leadingMargin" constant="8" id="PBK-PV-dkH"/>
+                    <constraint firstItem="cMa-wb-BXN" firstAttribute="top" secondItem="YLv-nX-E38" secondAttribute="bottom" constant="8" id="R0V-b8-hAW"/>
+                    <constraint firstItem="cMa-wb-BXN" firstAttribute="trailing" secondItem="YLv-nX-E38" secondAttribute="trailing" id="dPz-wr-DSk"/>
+                    <constraint firstItem="YLv-nX-E38" firstAttribute="top" secondItem="c9i-xl-BkI" secondAttribute="bottom" constant="8" id="dbH-Xa-1jo"/>
+                    <constraint firstItem="cMa-wb-BXN" firstAttribute="leading" secondItem="YLv-nX-E38" secondAttribute="leading" id="eRI-El-xfD"/>
+                    <constraint firstItem="6eB-6v-dmd" firstAttribute="leading" secondItem="cMa-wb-BXN" secondAttribute="leading" id="gH4-7V-63b"/>
+                    <constraint firstItem="6eB-6v-dmd" firstAttribute="top" secondItem="cMa-wb-BXN" secondAttribute="bottom" constant="8" id="hUM-hR-VFC"/>
+                    <constraint firstItem="c9i-xl-BkI" firstAttribute="leading" secondItem="3aI-jH-250" secondAttribute="leading" id="kEd-h7-cg2"/>
+                    <constraint firstItem="YLv-nX-E38" firstAttribute="trailing" secondItem="c9i-xl-BkI" secondAttribute="trailing" id="ooe-4q-2Ve"/>
+                    <constraint firstItem="YLv-nX-E38" firstAttribute="leading" secondItem="c9i-xl-BkI" secondAttribute="leading" id="xjV-0F-sWD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="c9i-xl-BkI" secondAttribute="trailing" constant="8" id="yMd-7F-o7W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardNumber" destination="cMa-wb-BXN" id="O4y-Ho-on7"/>
+                <outlet property="date" destination="3aI-jH-250" id="9BP-zR-jdn"/>
+                <outlet property="email" destination="YLv-nX-E38" id="r4S-IY-6TW"/>
+                <outlet property="name" destination="c9i-xl-BkI" id="Qwr-UI-Exb"/>
+                <outlet property="placeId" destination="6eB-6v-dmd" id="o3L-cQ-cJq"/>
+            </connections>
+            <point key="canvasLocation" x="52.5" y="76"/>
+        </tableViewCell>
+    </objects>
+</document>

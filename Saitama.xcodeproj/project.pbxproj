@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB0FD5171F4CBF0D0089AC35 /* PaymentHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0FD5161F4CBF0D0089AC35 /* PaymentHistory.xib */; };
+		CB0FD5191F4CC5050089AC35 /* PaymentHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FD5181F4CC5050089AC35 /* PaymentHistoryController.swift */; };
+		CB0FD51D1F4CC6BF0089AC35 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FD51C1F4CC6BF0089AC35 /* HistoryCell.swift */; };
+		CB0FD51F1F4D22290089AC35 /* PaymentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0FD51E1F4D22290089AC35 /* PaymentView.xib */; };
+		CB0FD5211F4D3A0F0089AC35 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0FD5201F4D3A0F0089AC35 /* HistoryCell.xib */; };
+		CB0FD5231F4D4FE50089AC35 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FD5221F4D4FE50089AC35 /* PaymentController.swift */; };
+		CBEEA5001F4BCC400002092E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA4FF1F4BCC400002092E /* AppDelegate.swift */; };
+		CBEEA5051F4BCC400002092E /* AuthenticateUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEEA5031F4BCC400002092E /* AuthenticateUser.storyboard */; };
+		CBEEA5081F4BCC400002092E /* Saitama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5061F4BCC400002092E /* Saitama.xcdatamodeld */; };
+		CBEEA50A1F4BCC400002092E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBEEA5091F4BCC400002092E /* Assets.xcassets */; };
+		CBEEA50D1F4BCC400002092E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEEA50B1F4BCC400002092E /* LaunchScreen.storyboard */; };
+		CBEEA5181F4BCC410002092E /* SaitamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5171F4BCC410002092E /* SaitamaTests.swift */; };
+		CBEEA5231F4BCC410002092E /* SaitamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5221F4BCC410002092E /* SaitamaUITests.swift */; };
+		CBEEA5351F4BF20C0002092E /* PaymentInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5341F4BF20C0002092E /* PaymentInterface.swift */; };
+		CBEEA5371F4BF2180002092E /* PlaceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5361F4BF2180002092E /* PlaceInterface.swift */; };
+		CBEEA5391F4BF2210002092E /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5381F4BF2210002092E /* UserInterface.swift */; };
+		CBEEA53C1F4BF2D90002092E /* BaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA53B1F4BF2D90002092E /* BaseInterface.swift */; };
+		CBEEA53F1F4BF4520002092E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA53E1F4BF4520002092E /* Reachability.swift */; };
+		CBEEA5411F4BF6520002092E /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5401F4BF6520002092E /* BaseResult.swift */; };
+		CBEEA5431F4BF7240002092E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5421F4BF7240002092E /* User.swift */; };
+		CBEEA5471F4BF8F80002092E /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5461F4BF8F80002092E /* BaseObject.swift */; };
+		CBEEA5491F4BFCFA0002092E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5481F4BFCFA0002092E /* Place.swift */; };
+		CBEEA54B1F4BFDD70002092E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA54A1F4BFDD70002092E /* Location.swift */; };
+		CBEEA54D1F4C01C20002092E /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA54C1F4C01C20002092E /* CreditCard.swift */; };
+		CBEEA54F1F4C1AC40002092E /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA54E1F4C1AC40002092E /* Payment.swift */; };
+		CBEEA5511F4C25110002092E /* NetworkingUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5501F4C25110002092E /* NetworkingUnitTest.swift */; };
+		CBEEA5531F4C28790002092E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5521F4C28790002092E /* Common.swift */; };
+		CBEEA5561F4C4AE10002092E /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBEEA5551F4C4AE10002092E /* bg.jpg */; };
+		CBEEA5581F4C4FFE0002092E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5571F4C4FFE0002092E /* LoginViewController.swift */; };
+		CBEEA55A1F4C618A0002092E /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBEEA5591F4C618A0002092E /* MapView.storyboard */; };
+		CBEEA5601F4C620B0002092E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA55F1F4C620B0002092E /* SignupViewController.swift */; };
+		CBEEA5621F4C72B10002092E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5611F4C72B10002092E /* MapViewController.swift */; };
+		CBEEA5641F4CA4DA0002092E /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEA5631F4CA4DA0002092E /* MapAnnotation.swift */; };
+		CBEEA56A1F4CB6B00002092E /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBEEA5691F4CB6B00002092E /* settings.plist */; };
+		E5466AAB3A431FAB142231C8 /* Pods_Saitama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C7F75082682508722AB31 /* Pods_Saitama.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBEEA5141F4BCC410002092E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEEA4F41F4BCC400002092E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEEA4FB1F4BCC400002092E;
+			remoteInfo = Saitama;
+		};
+		CBEEA51F1F4BCC410002092E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBEEA4F41F4BCC400002092E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBEEA4FB1F4BCC400002092E;
+			remoteInfo = Saitama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF64F9E2D49E54493C846DAD /* Pods-Saitama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.release.xcconfig"; sourceTree = "<group>"; };
+		CB0FD5161F4CBF0D0089AC35 /* PaymentHistory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentHistory.xib; sourceTree = "<group>"; };
+		CB0FD5181F4CC5050089AC35 /* PaymentHistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentHistoryController.swift; sourceTree = "<group>"; };
+		CB0FD51C1F4CC6BF0089AC35 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		CB0FD51E1F4D22290089AC35 /* PaymentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentView.xib; sourceTree = "<group>"; };
+		CB0FD5201F4D3A0F0089AC35 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		CB0FD5221F4D4FE50089AC35 /* PaymentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		CBEEA4FC1F4BCC400002092E /* Saitama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saitama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEEA4FF1F4BCC400002092E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBEEA5041F4BCC400002092E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AuthenticateUser.storyboard; sourceTree = "<group>"; };
+		CBEEA5071F4BCC400002092E /* Saitama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Saitama.xcdatamodel; sourceTree = "<group>"; };
+		CBEEA5091F4BCC400002092E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBEEA50C1F4BCC400002092E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBEEA50E1F4BCC400002092E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEEA5131F4BCC410002092E /* SaitamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaitamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEEA5171F4BCC410002092E /* SaitamaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaitamaTests.swift; sourceTree = "<group>"; };
+		CBEEA5191F4BCC410002092E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEEA51E1F4BCC410002092E /* SaitamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaitamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEEA5221F4BCC410002092E /* SaitamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaitamaUITests.swift; sourceTree = "<group>"; };
+		CBEEA5241F4BCC410002092E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEEA5341F4BF20C0002092E /* PaymentInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInterface.swift; sourceTree = "<group>"; };
+		CBEEA5361F4BF2180002092E /* PlaceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInterface.swift; sourceTree = "<group>"; };
+		CBEEA5381F4BF2210002092E /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
+		CBEEA53B1F4BF2D90002092E /* BaseInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInterface.swift; sourceTree = "<group>"; };
+		CBEEA53E1F4BF4520002092E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CBEEA5401F4BF6520002092E /* BaseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
+		CBEEA5421F4BF7240002092E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CBEEA5461F4BF8F80002092E /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		CBEEA5481F4BFCFA0002092E /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		CBEEA54A1F4BFDD70002092E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CBEEA54C1F4C01C20002092E /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		CBEEA54E1F4C1AC40002092E /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		CBEEA5501F4C25110002092E /* NetworkingUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingUnitTest.swift; sourceTree = "<group>"; };
+		CBEEA5521F4C28790002092E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CBEEA5551F4C4AE10002092E /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = Assets.xcassets/Wallpaper/bg.jpg; sourceTree = "<group>"; };
+		CBEEA5571F4C4FFE0002092E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CBEEA5591F4C618A0002092E /* MapView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		CBEEA55F1F4C620B0002092E /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CBEEA5611F4C72B10002092E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CBEEA5631F4CA4DA0002092E /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		CBEEA5691F4CB6B00002092E /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		DD048168ED6F138683811FBF /* Pods-Saitama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.debug.xcconfig"; sourceTree = "<group>"; };
+		DF6C7F75082682508722AB31 /* Pods_Saitama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saitama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBEEA4F91F4BCC400002092E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5466AAB3A431FAB142231C8 /* Pods_Saitama.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEA5101F4BCC410002092E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEA51B1F4BCC410002092E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02D443F323FA4D25E637B9CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD048168ED6F138683811FBF /* Pods-Saitama.debug.xcconfig */,
+				AF64F9E2D49E54493C846DAD /* Pods-Saitama.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A006F833CC9C5A4BAEA0C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C7F75082682508722AB31 /* Pods_Saitama.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB0FD51A1F4CC5F90089AC35 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FD5201F4D3A0F0089AC35 /* HistoryCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CB0FD51B1F4CC6950089AC35 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FD51C1F4CC6BF0089AC35 /* HistoryCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CBEEA4F31F4BCC400002092E = {
+			isa = PBXGroup;
+			children = (
+				CBEEA4FE1F4BCC400002092E /* Saitama */,
+				CBEEA5161F4BCC410002092E /* SaitamaTests */,
+				CBEEA5211F4BCC410002092E /* SaitamaUITests */,
+				CBEEA4FD1F4BCC400002092E /* Products */,
+				02D443F323FA4D25E637B9CD /* Pods */,
+				2A006F833CC9C5A4BAEA0C7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBEEA4FD1F4BCC400002092E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA4FC1F4BCC400002092E /* Saitama.app */,
+				CBEEA5131F4BCC410002092E /* SaitamaTests.xctest */,
+				CBEEA51E1F4BCC410002092E /* SaitamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBEEA4FE1F4BCC400002092E /* Saitama */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA5541F4C4AD20002092E /* CommonAssets */,
+				CBEEA53D1F4BF4380002092E /* Utils */,
+				CBEEA5331F4BF03A0002092E /* Networking */,
+				CBEEA5321F4BEAB70002092E /* Controllers */,
+				CBEEA5311F4BEA9B0002092E /* Model */,
+				CBEEA5301F4BEA8B0002092E /* Views */,
+				CBEEA4FF1F4BCC400002092E /* AppDelegate.swift */,
+				CBEEA5091F4BCC400002092E /* Assets.xcassets */,
+				CBEEA50E1F4BCC400002092E /* Info.plist */,
+				CBEEA5061F4BCC400002092E /* Saitama.xcdatamodeld */,
+			);
+			path = Saitama;
+			sourceTree = "<group>";
+		};
+		CBEEA5161F4BCC410002092E /* SaitamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA5171F4BCC410002092E /* SaitamaTests.swift */,
+				CBEEA5191F4BCC410002092E /* Info.plist */,
+			);
+			path = SaitamaTests;
+			sourceTree = "<group>";
+		};
+		CBEEA5211F4BCC410002092E /* SaitamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA5221F4BCC410002092E /* SaitamaUITests.swift */,
+				CBEEA5241F4BCC410002092E /* Info.plist */,
+			);
+			path = SaitamaUITests;
+			sourceTree = "<group>";
+		};
+		CBEEA5301F4BEA8B0002092E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FD51A1F4CC5F90089AC35 /* Cells */,
+				CBEEA5031F4BCC400002092E /* AuthenticateUser.storyboard */,
+				CBEEA50B1F4BCC400002092E /* LaunchScreen.storyboard */,
+				CBEEA5591F4C618A0002092E /* MapView.storyboard */,
+				CB0FD5161F4CBF0D0089AC35 /* PaymentHistory.xib */,
+				CB0FD51E1F4D22290089AC35 /* PaymentView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CBEEA5311F4BEA9B0002092E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA5461F4BF8F80002092E /* BaseObject.swift */,
+				CBEEA5401F4BF6520002092E /* BaseResult.swift */,
+				CBEEA5421F4BF7240002092E /* User.swift */,
+				CBEEA5481F4BFCFA0002092E /* Place.swift */,
+				CBEEA54A1F4BFDD70002092E /* Location.swift */,
+				CBEEA54C1F4C01C20002092E /* CreditCard.swift */,
+				CBEEA54E1F4C1AC40002092E /* Payment.swift */,
+				CBEEA5631F4CA4DA0002092E /* MapAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CBEEA5321F4BEAB70002092E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FD51B1F4CC6950089AC35 /* Cells */,
+				CBEEA5571F4C4FFE0002092E /* LoginViewController.swift */,
+				CBEEA55F1F4C620B0002092E /* SignupViewController.swift */,
+				CBEEA5611F4C72B10002092E /* MapViewController.swift */,
+				CB0FD5181F4CC5050089AC35 /* PaymentHistoryController.swift */,
+				CB0FD5221F4D4FE50089AC35 /* PaymentController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CBEEA5331F4BF03A0002092E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA5341F4BF20C0002092E /* PaymentInterface.swift */,
+				CBEEA5361F4BF2180002092E /* PlaceInterface.swift */,
+				CBEEA5381F4BF2210002092E /* UserInterface.swift */,
+				CBEEA53B1F4BF2D90002092E /* BaseInterface.swift */,
+				CBEEA5501F4C25110002092E /* NetworkingUnitTest.swift */,
+				CBEEA5691F4CB6B00002092E /* settings.plist */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		CBEEA53D1F4BF4380002092E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA53E1F4BF4520002092E /* Reachability.swift */,
+				CBEEA5521F4C28790002092E /* Common.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		CBEEA5541F4C4AD20002092E /* CommonAssets */ = {
+			isa = PBXGroup;
+			children = (
+				CBEEA5551F4C4AE10002092E /* bg.jpg */,
+			);
+			name = CommonAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBEEA4FB1F4BCC400002092E /* Saitama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEEA5271F4BCC410002092E /* Build configuration list for PBXNativeTarget "Saitama" */;
+			buildPhases = (
+				90D7A353CD3CE31D46AA0D52 /* [CP] Check Pods Manifest.lock */,
+				CBEEA4F81F4BCC400002092E /* Sources */,
+				CBEEA4F91F4BCC400002092E /* Frameworks */,
+				CBEEA4FA1F4BCC400002092E /* Resources */,
+				8486F1F525AB8E1F7E3B623C /* [CP] Embed Pods Frameworks */,
+				2BE305FB574D4D5962C85A5E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Saitama;
+			productName = Saitama;
+			productReference = CBEEA4FC1F4BCC400002092E /* Saitama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBEEA5121F4BCC410002092E /* SaitamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEEA52A1F4BCC410002092E /* Build configuration list for PBXNativeTarget "SaitamaTests" */;
+			buildPhases = (
+				CBEEA50F1F4BCC410002092E /* Sources */,
+				CBEEA5101F4BCC410002092E /* Frameworks */,
+				CBEEA5111F4BCC410002092E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEEA5151F4BCC410002092E /* PBXTargetDependency */,
+			);
+			name = SaitamaTests;
+			productName = SaitamaTests;
+			productReference = CBEEA5131F4BCC410002092E /* SaitamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBEEA51D1F4BCC410002092E /* SaitamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBEEA52D1F4BCC410002092E /* Build configuration list for PBXNativeTarget "SaitamaUITests" */;
+			buildPhases = (
+				CBEEA51A1F4BCC410002092E /* Sources */,
+				CBEEA51B1F4BCC410002092E /* Frameworks */,
+				CBEEA51C1F4BCC410002092E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBEEA5201F4BCC410002092E /* PBXTargetDependency */,
+			);
+			name = SaitamaUITests;
+			productName = SaitamaUITests;
+			productReference = CBEEA51E1F4BCC410002092E /* SaitamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBEEA4F41F4BCC400002092E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = hongzhou;
+				TargetAttributes = {
+					CBEEA4FB1F4BCC400002092E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PFJGZC7FDP;
+						ProvisioningStyle = Automatic;
+					};
+					CBEEA5121F4BCC410002092E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PFJGZC7FDP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBEEA4FB1F4BCC400002092E;
+					};
+					CBEEA51D1F4BCC410002092E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PFJGZC7FDP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBEEA4FB1F4BCC400002092E;
+					};
+				};
+			};
+			buildConfigurationList = CBEEA4F71F4BCC400002092E /* Build configuration list for PBXProject "Saitama" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBEEA4F31F4BCC400002092E;
+			productRefGroup = CBEEA4FD1F4BCC400002092E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBEEA4FB1F4BCC400002092E /* Saitama */,
+				CBEEA5121F4BCC410002092E /* SaitamaTests */,
+				CBEEA51D1F4BCC410002092E /* SaitamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBEEA4FA1F4BCC400002092E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEEA50D1F4BCC400002092E /* LaunchScreen.storyboard in Resources */,
+				CB0FD5211F4D3A0F0089AC35 /* HistoryCell.xib in Resources */,
+				CB0FD51F1F4D22290089AC35 /* PaymentView.xib in Resources */,
+				CBEEA50A1F4BCC400002092E /* Assets.xcassets in Resources */,
+				CBEEA5561F4C4AE10002092E /* bg.jpg in Resources */,
+				CBEEA55A1F4C618A0002092E /* MapView.storyboard in Resources */,
+				CB0FD5171F4CBF0D0089AC35 /* PaymentHistory.xib in Resources */,
+				CBEEA56A1F4CB6B00002092E /* settings.plist in Resources */,
+				CBEEA5051F4BCC400002092E /* AuthenticateUser.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEA5111F4BCC410002092E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEA51C1F4BCC410002092E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BE305FB574D4D5962C85A5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saitama/Pods-Saitama-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8486F1F525AB8E1F7E3B623C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Saitama/Pods-Saitama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D7A353CD3CE31D46AA0D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBEEA4F81F4BCC400002092E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEEA5581F4C4FFE0002092E /* LoginViewController.swift in Sources */,
+				CBEEA5531F4C28790002092E /* Common.swift in Sources */,
+				CBEEA5641F4CA4DA0002092E /* MapAnnotation.swift in Sources */,
+				CBEEA5371F4BF2180002092E /* PlaceInterface.swift in Sources */,
+				CBEEA5621F4C72B10002092E /* MapViewController.swift in Sources */,
+				CBEEA53C1F4BF2D90002092E /* BaseInterface.swift in Sources */,
+				CBEEA54D1F4C01C20002092E /* CreditCard.swift in Sources */,
+				CBEEA5351F4BF20C0002092E /* PaymentInterface.swift in Sources */,
+				CBEEA54F1F4C1AC40002092E /* Payment.swift in Sources */,
+				CBEEA5491F4BFCFA0002092E /* Place.swift in Sources */,
+				CBEEA5601F4C620B0002092E /* SignupViewController.swift in Sources */,
+				CBEEA5001F4BCC400002092E /* AppDelegate.swift in Sources */,
+				CBEEA54B1F4BFDD70002092E /* Location.swift in Sources */,
+				CBEEA5411F4BF6520002092E /* BaseResult.swift in Sources */,
+				CB0FD51D1F4CC6BF0089AC35 /* HistoryCell.swift in Sources */,
+				CB0FD5191F4CC5050089AC35 /* PaymentHistoryController.swift in Sources */,
+				CBEEA5391F4BF2210002092E /* UserInterface.swift in Sources */,
+				CBEEA5511F4C25110002092E /* NetworkingUnitTest.swift in Sources */,
+				CBEEA5471F4BF8F80002092E /* BaseObject.swift in Sources */,
+				CB0FD5231F4D4FE50089AC35 /* PaymentController.swift in Sources */,
+				CBEEA53F1F4BF4520002092E /* Reachability.swift in Sources */,
+				CBEEA5431F4BF7240002092E /* User.swift in Sources */,
+				CBEEA5081F4BCC400002092E /* Saitama.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEA50F1F4BCC410002092E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEEA5181F4BCC410002092E /* SaitamaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEA51A1F4BCC410002092E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEEA5231F4BCC410002092E /* SaitamaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBEEA5151F4BCC410002092E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEEA4FB1F4BCC400002092E /* Saitama */;
+			targetProxy = CBEEA5141F4BCC410002092E /* PBXContainerItemProxy */;
+		};
+		CBEEA5201F4BCC410002092E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBEEA4FB1F4BCC400002092E /* Saitama */;
+			targetProxy = CBEEA51F1F4BCC410002092E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBEEA5031F4BCC400002092E /* AuthenticateUser.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBEEA5041F4BCC400002092E /* Base */,
+			);
+			name = AuthenticateUser.storyboard;
+			sourceTree = "<group>";
+		};
+		CBEEA50B1F4BCC400002092E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBEEA50C1F4BCC400002092E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBEEA5251F4BCC410002092E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBEEA5261F4BCC410002092E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBEEA5281F4BCC410002092E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD048168ED6F138683811FBF /* Pods-Saitama.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PFJGZC7FDP;
+				INFOPLIST_FILE = Saitama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.Saitama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CBEEA5291F4BCC410002092E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF64F9E2D49E54493C846DAD /* Pods-Saitama.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PFJGZC7FDP;
+				INFOPLIST_FILE = Saitama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.Saitama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CBEEA52B1F4BCC410002092E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PFJGZC7FDP;
+				INFOPLIST_FILE = SaitamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.SaitamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Saitama.app/Saitama";
+			};
+			name = Debug;
+		};
+		CBEEA52C1F4BCC410002092E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PFJGZC7FDP;
+				INFOPLIST_FILE = SaitamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.SaitamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Saitama.app/Saitama";
+			};
+			name = Release;
+		};
+		CBEEA52E1F4BCC410002092E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PFJGZC7FDP;
+				INFOPLIST_FILE = SaitamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.SaitamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Saitama;
+			};
+			name = Debug;
+		};
+		CBEEA52F1F4BCC410002092E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PFJGZC7FDP;
+				INFOPLIST_FILE = SaitamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.SaitamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Saitama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBEEA4F71F4BCC400002092E /* Build configuration list for PBXProject "Saitama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEEA5251F4BCC410002092E /* Debug */,
+				CBEEA5261F4BCC410002092E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEEA5271F4BCC410002092E /* Build configuration list for PBXNativeTarget "Saitama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEEA5281F4BCC410002092E /* Debug */,
+				CBEEA5291F4BCC410002092E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEEA52A1F4BCC410002092E /* Build configuration list for PBXNativeTarget "SaitamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEEA52B1F4BCC410002092E /* Debug */,
+				CBEEA52C1F4BCC410002092E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBEEA52D1F4BCC410002092E /* Build configuration list for PBXNativeTarget "SaitamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBEEA52E1F4BCC410002092E /* Debug */,
+				CBEEA52F1F4BCC410002092E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CBEEA5061F4BCC400002092E /* Saitama.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CBEEA5071F4BCC400002092E /* Saitama.xcdatamodel */,
+			);
+			currentVersion = CBEEA5071F4BCC400002092E /* Saitama.xcdatamodel */;
+			path = Saitama.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CBEEA4F41F4BCC400002092E /* Project object */;
+}

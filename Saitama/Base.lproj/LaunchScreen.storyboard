@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mRA-pp-9dx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8r-T4-GxF">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vA9-3k-04S">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y8r-T4-GxF" firstAttribute="width" secondItem="mRA-pp-9dx" secondAttribute="width" id="JEb-8B-lqc"/>
+                            <constraint firstItem="mRA-pp-9dx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ke0-ZR-MSc"/>
+                            <constraint firstItem="mRA-pp-9dx" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="cKb-wb-6QF"/>
+                            <constraint firstItem="Y8r-T4-GxF" firstAttribute="centerY" secondItem="mRA-pp-9dx" secondAttribute="centerY" id="cqQ-wz-hYc"/>
+                            <constraint firstItem="mRA-pp-9dx" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="g09-cl-wC9"/>
+                            <constraint firstItem="Y8r-T4-GxF" firstAttribute="centerX" secondItem="mRA-pp-9dx" secondAttribute="centerX" id="gN3-S0-1cj"/>
+                            <constraint firstItem="mRA-pp-9dx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gpT-xs-ysm"/>
+                            <constraint firstItem="Y8r-T4-GxF" firstAttribute="height" secondItem="mRA-pp-9dx" secondAttribute="height" id="zP7-Ie-2vq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg.jpg" width="683" height="1024"/>
+    </resources>
+</document>
